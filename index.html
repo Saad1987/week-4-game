@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sphere Collector</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+</head>
+<body>
+    <header>Sphere Collector</header>
+    <main>
+        <section>
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four spheres below. By clicking on a sphere you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+            <p>The value of each sphere is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the value of the spheres will be changed to a random value !</p>
+        </section>
+          <div class="mini-container clearfix">  <div class="Rand">
+                <span class="weight">Random Number :</span>
+                <br><br>
+                <span class="weight" id="RandNumb"></span>
+            </div>
+            <div class="WL">
+                <div>
+                <span id="status"></span>
+                
+            </div>
+                <span>Wins : <span id="wins"></span></span>
+                <br>
+                <span>Losses :<span id="losses"></span>
+            </div>
+        </div>
+            <div id="pic">
+                
+                <img id="blue" src="assets/images/blue-sphere.jpg" width="100px" height="80px" >
+                <img id="green" src="assets/images/green-sphere.jpg" width="100px" height="80px">
+                <img id="orange" src="assets/images/orange-sphere.jpg" width="100px" height="80px">
+                <img id="red" src="assets/images/red-sphere.jpg" width="100px" height="80px">
+               
+            </div>
+            <div class="mini-container">
+                <div class="Rand2">
+                <span class="weight"> Your score is :</span>
+           
+            <div id="playerScore">
+                
+            </div> </div></div>
+        
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    
+</body>
+</html>
